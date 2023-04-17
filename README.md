@@ -7,3 +7,5 @@ Voici le lien vers mon rapport de stage : https://docs.google.com/document/d/114
 
 Voici le lien vers ma soutenance de stage : 
 
+# Structure de l'application Flutter
+
