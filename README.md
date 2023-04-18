@@ -9,4 +9,6 @@ Voici le lien vers ma soutenance de stage :
 
 # Structure de l'application Flutter
 
-image::struct_fluter.png[file_structure] 
+
+image::struct_fluter.png[] 
+
