@@ -6,7 +6,7 @@ Il existe 3 grandes catégories de widget :
 * Stateful
 * Inherited
 
-Un compte rendu de chaque semaine sera décrit dans ce Readme afin de suivre l'avancée du projet. 
+Un compte rendu de chaque semaine sera décrit dans ce Readme afin de suivre l'avancée du projet, ainsi que des releases à chaque grandes étapes de l'application.
 
 Voici le lien vers mon rapport de stage : https://docs.google.com/document/d/114Eu-01GwE1Zb8lthhAKNn8hiFwyuyJBLdizLCjJCiI/edit?usp=sharing 
 
