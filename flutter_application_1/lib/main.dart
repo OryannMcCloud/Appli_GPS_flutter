@@ -1,19 +1,37 @@
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const MainApp());
-}
+void main() => runApp(MyApp());
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
 
+class MyApp extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
+      title: 'Crisartech GPS beta',
+      theme: ThemeData(
+        primaryColor: Colors.purple,
+      ),
       home: Scaffold(
-        body: Center(
-          child: Text('Hello World!'),
+        appBar: AppBar(
+          title: Text('Crisartech GPS beta'),
+          backgroundColor: Colors.purple,
         ),
+        body: Center(
+          child: Square(),
+        ),
+      ),
+    );
+  }
+}
+
+class Square extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: 100,
+      height: 100,
+      decoration: BoxDecoration(
+        color: Colors.purple,
       ),
     );
   }
