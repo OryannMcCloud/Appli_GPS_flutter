@@ -27,6 +27,7 @@ Ajout de plusieurs packages pour organiser au mieux l'application en vue d'une m
 * utilities : contiendra toute la logique de l'application exemple : changer l'affichage des données en fonction d'une action utilisateur
 
 Pour lancer l'application, activer le mode développeur sur le téléphone et l'USB debugging puis entrer la commande _flutter run_ dans le terminal.
+Pour vérifier que notre appareil est détecté par flutter faire la commande : _flutter devices_
 
 # Impact environnemental
 
