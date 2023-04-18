@@ -31,6 +31,7 @@ Pour vérifier que notre appareil est détecté par flutter faire la commande : 
 
 # GPS en Flutter 
 
+Ajout du package fleaflet/flutter_map en passant par la commande _flutter pub add flutter_map_ pour avoir accès à openstreet map depuis l'application.
 
 
 # Impact environnemental
