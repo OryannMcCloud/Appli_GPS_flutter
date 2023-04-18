@@ -29,6 +29,10 @@ Ajout de plusieurs packages pour organiser au mieux l'application en vue d'une m
 Pour lancer l'application, activer le mode développeur sur le téléphone et l'USB debugging puis entrer la commande _flutter run_ dans le terminal.
 Pour vérifier que notre appareil est détecté par flutter faire la commande : _flutter devices_
 
+# GPS en Flutter 
+
+
+
 # Impact environnemental
 
 Afin de limiter mon impact sur l'environnement suite au module numérique responsable pour me former je préfère consulter des sites web plutôt de que des videos tuto, mes principales sources actuelles sont : 
