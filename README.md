@@ -33,6 +33,12 @@ Pour vérifier que notre appareil est détecté par flutter faire la commande : 
 
 Ajout du package fleaflet/flutter_map en passant par la commande _flutter pub add flutter_map_ pour avoir accès à openstreet map depuis l'application.
 
+# Pages de l'application
+
+* Le fichier map.dart contiendra la carte
+* Le fichier login.dart contiendra la page de login au lancement de l'application par défaut
+* le fichier home.dart qui montrera les différentes cartes de rally accessibles
+
 
 # Impact environnemental
 
