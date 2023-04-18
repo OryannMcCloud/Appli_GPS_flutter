@@ -26,6 +26,8 @@ Ajout de plusieurs packages pour organiser au mieux l'application en vue d'une m
 * models : collection de données tirées de serveurs, utilisateurs ou API extérieures (situé dans le package lib)
 * utilities : contiendra toute la logique de l'application exemple : changer l'affichage des données en fonction d'une action utilisateur
 
+Pour lancer l'application, activer le mode développeur sur le téléphone et l'USB debugging puis entrer la commande _flutter run_ dans le terminal.
+
 # Impact environnemental
 
 Afin de limiter mon impact sur l'environnement suite au module numérique responsable pour me former je préfère consulter des sites web plutôt de que des videos tuto, mes principales sources actuelles sont : 
