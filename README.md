@@ -29,6 +29,6 @@ Ajout de plusieurs packages pour organiser au mieux l'application en vue d'une m
 # Impact environnemental
 
 Afin de limiter mon impact sur l'environnement suite au module numérique responsable pour me former je préfère consulter des sites web plutôt de que des videos tuto, mes principales sources actuelles sont : 
-* Stackoverflow.com
-* Geeksforgeeks.org
-* Flutter.dev
+* Stackoverflow.com : plus propre que 83% des sites testés par le site websitecarbon.com
+* Geeksforgeeks.org : plus propre que 56% des sites testés par le site websitecarbon.com
+* Flutter.dev : plus propre que 84% des sites testés par le site websitecarbon.com
