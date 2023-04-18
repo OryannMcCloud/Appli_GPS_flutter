@@ -12,3 +12,4 @@ Voici le lien vers ma soutenance de stage :
 
 image::struct_fluter.png[] 
 
+Une fois l'application flutter ouverte dans VScode il y aura peut être besoin de mettre à jour les packages depuis git en utilisant la commande : _flutter packages get_
