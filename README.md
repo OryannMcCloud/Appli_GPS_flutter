@@ -21,3 +21,4 @@ Ajout de plusieurs packages pour organiser au mieux l'application en vue d'une m
 * providers : contiendra toutes les interactions qui transfèrent des données depuis l'extérieur de l'appli (mais n'intéragit pas avec les serveur) (situé dans le package lib)
 * widgets : pour les widgets utilisés plusieurs fois dans une application (situé dans le package lib)
 * models : collection de données tirées de serveurs, utilisateurs ou API extérieures (situé dans le package lib)
+* utilities : contiendra toute la logique de l'application exemple : changer l'affichage des données en fonction d'une action utilisateur
