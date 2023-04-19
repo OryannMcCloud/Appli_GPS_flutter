@@ -6,6 +6,8 @@ Il existe 3 grandes catégories de widget :
 * Stateful
 * Inherited
 
+Pour le codage sur IOS il est necessaire de faire des configurations suplémentaires sur vscode. On peut utiliser un appareil iOS que l'on possède ou utiliser un service cloud tel que Firebase Test Lab ou BrowserStack pour tester notre application sur différents appareils iOS.
+
 Un compte rendu de chaque semaine sera décrit dans ce Readme afin de suivre l'avancée du projet, ainsi que des releases à chaque grandes étapes de l'application.
 
 Voici le lien vers mon rapport de stage : https://docs.google.com/document/d/114Eu-01GwE1Zb8lthhAKNn8hiFwyuyJBLdizLCjJCiI/edit?usp=sharing 
