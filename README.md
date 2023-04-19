@@ -29,6 +29,10 @@ Ajout de plusieurs packages pour organiser au mieux l'application en vue d'une m
 Pour lancer l'application, activer le mode développeur sur le téléphone et l'USB debugging puis entrer la commande _flutter run_ dans le terminal.
 Pour vérifier que notre appareil est détecté par flutter faire la commande : _flutter devices_
 
+=== Explications widgets 
+
+Scaffold est un widget de base dans Flutter qui fournit une structure de page de base pour une application. Il permet de définir l'interface utilisateur de manière modulaire en divisant la page en sections telles que la barre d'applications, le corps de l'application, le pied de page, etc. Il permet également de fournir plusieurs fonctionnalités courantes telles que la gestion de la navigation, la gestion des barres d'outils, la gestion des fonds, la gestion des onglets, etc. Cela facilite le développement d'applications en permettant aux développeurs de se concentrer sur le contenu de l'application plutôt que sur les détails de mise en page et de navigation.
+
 # GPS en Flutter 
 
 Ajout du package fleaflet/flutter_map en passant par la commande _flutter pub add flutter_map_ pour avoir accès à openstreet map depuis l'application.
