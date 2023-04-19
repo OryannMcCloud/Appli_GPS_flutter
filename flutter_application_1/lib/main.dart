@@ -16,23 +16,39 @@ class MyApp extends StatelessWidget{
           title: Text('Crisartech GPS beta'),
           backgroundColor: Colors.purple,
         ),
-        body: Center(
-          child: Square(),
-        ),
+        body: const MyCustomForm(),
       ),
     );
   }
 }
 
-class Square extends StatelessWidget {
+class MyCustomForm extends StatelessWidget {
+  const MyCustomForm({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: 100,
-      height: 100,
-      decoration: BoxDecoration(
-        color: Colors.purple,
-      ),
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: <Widget>[
+        const Padding(
+          padding: EdgeInsets.symmetric(horizontal: 8, vertical: 16),
+          child: TextField(
+            decoration: InputDecoration(
+              border: OutlineInputBorder(),
+              hintText: 'Enter a search term',
+            ),
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 16),
+          child: TextFormField(
+            decoration: const InputDecoration(
+              border: OutlineInputBorder(),
+              labelText: 'Enter your username',
+            ),
+          ),
+        ),
+      ],
     );
   }
 }
