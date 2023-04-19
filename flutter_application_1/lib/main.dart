@@ -34,8 +34,10 @@ class MyCustomForm extends StatelessWidget {
           padding: EdgeInsets.symmetric(horizontal: 8, vertical: 16),
           child: TextField(
             decoration: InputDecoration(
-              border: OutlineInputBorder(),
-              hintText: 'Enter a search term',
+              border: OutlineInputBorder(
+                borderSide: BorderSide(color: Colors.purple)
+              ),
+              hintText: 'Identifiant',
             ),
           ),
         ),
@@ -43,8 +45,10 @@ class MyCustomForm extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 16),
           child: TextFormField(
             decoration: const InputDecoration(
-              border: OutlineInputBorder(),
-              labelText: 'Enter your username',
+              border: OutlineInputBorder(
+                borderSide: BorderSide(color: Colors.purple)
+              ),
+              labelText: 'Mot de passe',
             ),
           ),
         ),
