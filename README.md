@@ -47,7 +47,7 @@ Ajout du package fleaflet/flutter_map en passant par la commande _flutter pub ad
 # Pages de l'application
 
 * Le fichier map.dart contiendra la carte
-* Le fichier login.dart contiendra la page de login au lancement de l'application par défaut
+* Le fichier login.dart contiendra la page de login au lancement de l'application par défaut : presque finie 
 * le fichier home.dart qui montrera les différentes cartes de rally accessibles
 
 
