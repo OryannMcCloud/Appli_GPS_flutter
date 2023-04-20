@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget{
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Crisartech GPS beta'),
+          title: const Text('Crisartech GPS beta'),
           backgroundColor: Colors.purple,
         ),
         body: const MyCustomForm(),
@@ -37,7 +37,7 @@ class MyCustomForm extends StatelessWidget {
               border: OutlineInputBorder(
                 borderSide: BorderSide(color: Colors.purple)
               ),
-              hintText: 'Identifiant',
+              labelText: 'Identifiant',
             ),
           ),
         ),
@@ -50,9 +50,22 @@ class MyCustomForm extends StatelessWidget {
               ),
               labelText: 'Mot de passe',
             ),
+            ),
+          ),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 16),
+          child: TextButton(
+            style: TextButton.styleFrom(
+              backgroundColor: Colors.purple,
+              primary: Colors.white,
+            ),
+            onPressed: () {},
+            child: const Text('Submit'),
           ),
         ),
       ],
     );
   }
 }
+
+
