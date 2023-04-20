@@ -12,6 +12,8 @@ Un compte rendu de chaque semaine sera décrit dans ce Readme afin de suivre l'a
 
 Voici le lien vers mon rapport de stage : https://docs.google.com/document/d/114Eu-01GwE1Zb8lthhAKNn8hiFwyuyJBLdizLCjJCiI/edit?usp=sharing 
 
+Voici le lien vers les maquettes de l'application : https://www.canva.com/design/DAFghi-GNRc/7YHYE0Vj2bPN6YGFlJO4Ag/edit?utm_content=DAFghi-GNRc&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
 # Structure de l'application Flutter
 
 
