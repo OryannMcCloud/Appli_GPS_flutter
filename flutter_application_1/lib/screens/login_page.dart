@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import 'home.dart';
 
 
 class LoginPage extends StatelessWidget {
+  const LoginPage({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -11,7 +14,7 @@ class LoginPage extends StatelessWidget {
 }
 
 class MyCustomForm extends StatelessWidget {
-  const MyCustomForm({super.key});
+  const MyCustomForm({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -38,8 +41,8 @@ class MyCustomForm extends StatelessWidget {
               ),
               labelText: 'Mot de passe',
             ),
-            ),
           ),
+        ),
         Padding(
           padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 16),
           child: TextButton(
@@ -47,7 +50,12 @@ class MyCustomForm extends StatelessWidget {
               backgroundColor: Colors.purple,
               primary: Colors.white,
             ),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => HomeScreen()),
+              );
+            },
             child: const Text('Submit'),
           ),
         ),
