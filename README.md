@@ -41,6 +41,8 @@ Pour vérifier que notre appareil est détecté par flutter faire la commande : 
 
 * Le typage en Flutter est dynamique !
 
+* La redirection par les boutons se fait dans la fonction onPressed() et utilise la fonction Navigator.push()
+
 === Branches 
 
 Je vais utiliser des branches temporairement pour chaque page qui n'est pas encore opérationnelle, cela me permettra de garder un code qui fonctionne sur la branche principale "master".
