@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+import 'screens/login_page.dart';
 
-void main() => runApp(MyApp());
 
+void main() {
+  runApp(MyApp());
+}
 
-class MyApp extends StatelessWidget{
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -16,56 +19,11 @@ class MyApp extends StatelessWidget{
           title: const Text('Crisartech GPS beta'),
           backgroundColor: Colors.purple,
         ),
-        body: const MyCustomForm(),
+        body: LoginPage(),
       ),
     );
   }
 }
 
-class MyCustomForm extends StatelessWidget {
-  const MyCustomForm({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: <Widget>[
-        const Padding(
-          padding: EdgeInsets.symmetric(horizontal: 8, vertical: 16),
-          child: TextField(
-            decoration: InputDecoration(
-              border: OutlineInputBorder(
-                borderSide: BorderSide(color: Colors.purple)
-              ),
-              labelText: 'Identifiant',
-            ),
-          ),
-        ),
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 16),
-          child: TextFormField(
-            decoration: const InputDecoration(
-              border: OutlineInputBorder(
-                borderSide: BorderSide(color: Colors.purple)
-              ),
-              labelText: 'Mot de passe',
-            ),
-            ),
-          ),
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 16),
-          child: TextButton(
-            style: TextButton.styleFrom(
-              backgroundColor: Colors.purple,
-              primary: Colors.white,
-            ),
-            onPressed: () {},
-            child: const Text('Submit'),
-          ),
-        ),
-      ],
-    );
-  }
-}
 
 
