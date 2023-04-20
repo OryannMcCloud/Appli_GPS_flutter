@@ -45,6 +45,8 @@ Pour vérifier que notre appareil est détecté par flutter faire la commande : 
 
 * La redirection par les boutons se fait dans la fonction onPressed() et utilise la fonction Navigator.push()
 
+* Pour tester sur IOS on doit obligatoirement avoir un appareil apple physique pour tester car on ne peut avoir accès aux emulateurs qu'au travers d'un Mac. Pour tester à distance notre application sur un appareil Apple on peut utiliser service basé sur le cloud comme Firebase Test Lab ou AWS Device Farm.
+
 === Branches 
 
 Je vais utiliser des branches temporairement pour chaque page qui n'est pas encore opérationnelle, cela me permettra de garder un code qui fonctionne sur la branche principale "master".
