@@ -54,7 +54,8 @@ Je vais utiliser des branches temporairement pour chaque page qui n'est pas enco
 
 # GPS en Flutter 
 
-Ajout du package fleaflet/flutter_map en passant par la commande _flutter pub add flutter_map_ pour avoir accès à openstreet map depuis l'application.
+Ajout du package flutter_open_street_map en passant par la commande 
+_import 'package:flutter_open_street_map/flutter_open_street_map.dart';_
 
 # Pages de l'application
 
