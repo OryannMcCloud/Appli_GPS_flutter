@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:latlong2/latlong.dart';
+import 'package:flutter_map/plugin_api.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:lite_rolling_switch/lite_rolling_switch.dart';
 
@@ -23,6 +24,7 @@ class HomeScreen extends StatelessWidget {
                   TileLayerOptions(
                     urlTemplate: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                     subdomains: ['a', 'b', 'c'],
+                    tileProvider: NonCachingNetworkTileProvider(),
                   ),
                   MarkerLayerOptions(
                     markers: [
