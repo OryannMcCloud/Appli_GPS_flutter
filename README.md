@@ -61,6 +61,10 @@ Il est possible d'avoir une erreur par rapport au fait que le constructeur n'est
 * Soit forker le repo et mettre le constructeur en const
 * Soit utiliser plutôt les packages flutter_map ou mapox_gl
 
+Il peut y avoir des problèmes de permission donc pour cela nous mettons les commandes suivantes dans le terminal :
+* _flutter pub add location_
+* _flutter pub add permission_handler_
+
 # Pages de l'application
 
 * Le fichier map.dart contiendra la carte
