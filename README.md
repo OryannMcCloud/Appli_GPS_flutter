@@ -57,6 +57,10 @@ Je vais utiliser des branches temporairement pour chaque page qui n'est pas enco
 Ajout du package flutter_open_street_map en passant par la commande 
 _import 'package:flutter_open_street_map/flutter_open_street_map.dart';_
 
+Il est possible d'avoir une erreur par rapport au fait que le constructeur n'est pas "const" pour résoudre cela nous pouvons : 
+* Soit forker le repo et mettre le constructeur en const
+* Soit utiliser plutôt les packages flutter_map ou mapox_gl
+
 # Pages de l'application
 
 * Le fichier map.dart contiendra la carte
