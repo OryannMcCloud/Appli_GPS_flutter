@@ -13,7 +13,8 @@ dependencies:
   location: ^4.4.0
   geolocator: ^7.6.2
   lite_rolling_switch: ^1.0.0
-  flutter_launcher_icons: "^0.13.1"
+  flutter_launcher_icons: ^0.13.1
+  custom_map_markers: ^0.0.1
 
 dev_dependencies:
   flutter_test:
@@ -22,6 +23,8 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets : 
+  - assets/arrow.png
 
 flutter_icons:
   image_path: "assets/logo.png"

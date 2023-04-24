@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'screens/login_page.dart';
+import 'provider/theme_provider.dart';
 
 
 void main() {
@@ -11,12 +12,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Crisartech GPS beta',
-      theme: ThemeData(
-        primaryColor: Colors.purple,
-      ),
+      themeMode: ThemeMode.system,
+      darkTheme: MyThemes.darkTheme,
+      theme: MyThemes.lightTheme,
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Crisartech GPS beta'),
+          title: Text('Crisartech GPS beta'),
           backgroundColor: Colors.purple,
         ),
         body: LoginPage(),

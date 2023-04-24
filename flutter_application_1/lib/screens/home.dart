@@ -29,12 +29,14 @@ class HomeScreen extends StatelessWidget {
                   MarkerLayerOptions(
                     markers: [
                       Marker(
-                        point: LatLng(position.latitude, position.longitude),
-                        builder: (ctx) => Icon(
-                          Icons.location_on,
-                          color: Colors.purple,
-                          size: 50.0, // specify the size of the Icon widget
+                        point: LatLng(44.359642, 1.671465),
+                        builder: (ctx) => Image.asset(
+                          //Icons.location_on,
+                          'assets/arrow.png', // relatif au pubspec.yaml
+                          width: 50.0, // specify the width of the image widget
+                          height: 50.0, // specify the height of the image widget
                         ),
+                        anchorPos: AnchorPos.align(AnchorAlign.bottom),
                       ),
                     ],
                   ),
