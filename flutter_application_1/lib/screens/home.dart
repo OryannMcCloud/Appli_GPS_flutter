@@ -53,7 +53,6 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ],
         ),
-        // switch
         Positioned(
           left: 20.0,
           bottom: 20.0,
