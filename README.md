@@ -1,6 +1,6 @@
 # Introduction
 Stage Crisartech developpement d'une application pour mobile/tablette cross-platform.
-Flutter est un kit de développement logiciel pour construire des applications haute performance et haute fidélité iOS, Android, Web(beta), and desktop(technical preview) depuis une simplebase de code écrite en langage Dart. Dans Flutter tout est widget, tout comme les types natifs int, double..etc .
+Flutter est un SDK pour construire des applications haute performance et haute fidélité iOS, Android, Web(beta), and desktop(technical preview) depuis une simplebase de code écrite en langage Dart. Dans Flutter tout est widget, tout comme les types natifs int, double..etc .
 Il existe 3 grandes catégories de widget : 
 * Stateless : widgets qui ne peuvent pas changer d'etat
 * Stateful : leur etat peut changer au cours de leur vie
