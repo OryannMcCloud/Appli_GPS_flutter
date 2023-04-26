@@ -5,43 +5,43 @@ import 'package:flutter_map/plugin_api.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:lite_rolling_switch/lite_rolling_switch.dart';
 
-class HomeScreen extends StatefulWidget {
+class HomeScreen extends StatefulWidget { //widget pouvant changer d'état (GPS qui change de position)
   @override
   _HomeScreenState createState() => _HomeScreenState();
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  LatLng _currentPosition = LatLng(44.359642, 1.671465);
+  LatLng _currentPosition = LatLng(44.359642, 1.671465); //probleme de l'affichage de la position actuelle
 
   @override
-  void initState() {
+  void initState() { //starting state 
     super.initState();
-    Geolocator.getPositionStream().listen((Position position) {
-      setState(() {
-        _currentPosition = LatLng(position.latitude, position.longitude);
+    Geolocator.getPositionStream().listen((Position position) { //listen to the position
+      setState(() { //set the state
+        _currentPosition = LatLng(position.latitude, position.longitude); //set the position
       });
     });
   }
 
   @override
-  Widget build(BuildContext context) {
-    return Stack(
-      children: [
-        FlutterMap(
-          options: MapOptions(
-            center: _currentPosition,
-            zoom: 16.0,
+  Widget build(BuildContext context) { //build the widget
+    return Stack( //stack the widget
+      children: [ //list of widget
+        FlutterMap( //map 
+          options: MapOptions(  //map options
+            center: _currentPosition,   //center of the map
+            zoom: 16.0, //zoom of the map
           ),
-          layers: [
-            TileLayerOptions(
-              urlTemplate: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
-              subdomains: ['a', 'b', 'c'],
-              tileProvider: NonCachingNetworkTileProvider(),
+          layers: [ //layers of the map
+            TileLayerOptions( //tile layer
+              urlTemplate: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", //url of the tile
+              subdomains: ['a', 'b', 'c'], //subdomains of the tile
+              tileProvider: NonCachingNetworkTileProvider(), //tile provider
             ),
-            MarkerLayerOptions(
-              markers: [
+            MarkerLayerOptions( //marker of position layer (icon)
+              markers: [ //list of markers
                 Marker(
-                  point: _currentPosition,
+                  point: _currentPosition, //position of the marker
                   builder: (ctx) => Image.asset(
                     'assets/arrow.png',
                     width: 50.0,
