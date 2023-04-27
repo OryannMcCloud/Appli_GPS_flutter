@@ -47,11 +47,6 @@ Pour vérifier que notre appareil est détecté par flutter faire la commande : 
 
 * Pour tester sur IOS on doit obligatoirement avoir un appareil apple physique pour tester car on ne peut avoir accès aux emulateurs qu'au travers d'un Mac. Pour tester à distance notre application sur un appareil Apple on peut utiliser service basé sur le cloud comme Firebase Test Lab ou AWS Device Farm.
 
-=== Branches 
-
-Je vais utiliser des branches temporairement pour chaque page qui n'est pas encore opérationnelle, cela me permettra de garder un code qui fonctionne sur la branche principale "master".
-* branche_page_login : presque terminée mais bug au runtime
-
 # GPS en Flutter 
 
 Ajout du package flutter_open_street_map en passant par la commande 
@@ -64,6 +59,8 @@ Il est possible d'avoir une erreur par rapport au fait que le constructeur n'est
 Il peut y avoir des problèmes de permission donc pour cela nous mettons les commandes suivantes dans le terminal :
 * _flutter pub add location_
 * _flutter pub add permission_handler_
+
+Les trames que nous recevront vont se présenter sous la forme NMEA avec comme sous division une trame RMC et GGA
 
 # Pages de l'application
 
