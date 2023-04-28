@@ -4,7 +4,6 @@ Flutter est un SDK pour construire des applications haute performance et haute f
 Il existe 3 grandes catégories de widget : 
 * Stateless : widgets qui ne peuvent pas changer d'etat
 * Stateful : leur etat peut changer au cours de leur vie
-* Inherited
 
 Pour le codage sur IOS il est necessaire de faire des configurations suplémentaires sur vscode. On peut utiliser un appareil iOS que l'on possède ou utiliser un service cloud tel que Firebase Test Lab ou BrowserStack pour tester notre application sur différents appareils iOS.
 
