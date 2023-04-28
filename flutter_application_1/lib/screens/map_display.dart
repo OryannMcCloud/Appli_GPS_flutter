@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_map/flutter_map.dart';
+import 'package:flutter_map/plugin_api.dart';
 import 'package:latlong2/latlong.dart';
 
 class MapDisplay extends StatefulWidget {
@@ -21,11 +22,13 @@ class _MapDisplayState extends State<MapDisplay> {
           zoom: 13.0,
         ),
         layers: [
-          TileLayerOptions(
-            urlTemplate: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
-            subdomains: ['a', 'b', 'c'],
+          TileLayer(
+            options: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+            stream: ['a', 'b', 'c'],
+            mapState: MapState(),
+
           ),
-        ],
+        ]
       ),
     );
   }
