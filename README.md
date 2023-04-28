@@ -47,6 +47,8 @@ Pour vérifier que notre appareil est détecté par flutter faire la commande : 
 
 * Pour tester sur IOS on doit obligatoirement avoir un appareil apple physique pour tester car on ne peut avoir accès aux emulateurs qu'au travers d'un Mac. Pour tester à distance notre application sur un appareil Apple on peut utiliser service basé sur le cloud comme Firebase Test Lab ou AWS Device Farm.
 
+* Si on t'embete avec l'initialisation tu mets "late" avant le type de la variable
+
 # GPS en Flutter 
 
 Ajout du package flutter_open_street_map en passant par la commande 
