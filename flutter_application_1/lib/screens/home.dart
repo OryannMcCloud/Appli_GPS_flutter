@@ -11,7 +11,7 @@ class HomeScreen extends StatefulWidget { //widget pouvant changer d'état (GPS 
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  LatLng _currentPosition = LatLng(44.359642, 1.671465); //probleme de l'affichage de la position actuelle
+  late LatLng _currentPosition; //probleme de l'affichage de la position actuelle
 
   @override
   void initState() { //starting state 
