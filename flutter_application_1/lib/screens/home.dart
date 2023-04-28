@@ -42,24 +42,24 @@ class _HomeScreenState extends State<HomeScreen> {
               markers: [ //list of markers
                 Marker(
                   point: _currentPosition, //position of the marker
-                  builder: (ctx) => Image.asset(
-                    'assets/arrow.png',
-                    width: 50.0,
+                  builder: (ctx) => Image.asset( //replace the marker by an image
+                    'assets/arrow.png', //non absolute path of the image from 
+                    width: 50.0, //choose the size of the image
                     height: 50.0,
                   ),
-                  anchorPos: AnchorPos.align(AnchorAlign.center),
+                  anchorPos: AnchorPos.align(AnchorAlign.center), //anchor to choose the image alignment with your position
                 ),
               ],
             ),
           ],
         ),
         Positioned(
-          left: 20.0,
+          left: 20.0, //position of the switch
           bottom: 20.0,
           child: Container(
             decoration: BoxDecoration(
               color: Colors.white,
-              borderRadius: BorderRadius.circular(20.0),
+              borderRadius: BorderRadius.circular(20.0), //border radius of the switch
             ),
             child: LiteRollingSwitch(
               value: true,
