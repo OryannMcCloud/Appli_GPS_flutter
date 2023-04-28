@@ -4,7 +4,6 @@ Flutter est un SDK pour construire des applications haute performance et haute f
 Il existe 3 grandes catégories de widget : 
 * Stateless : widgets qui ne peuvent pas changer d'etat
 * Stateful : leur etat peut changer au cours de leur vie
-* Inherited
 
 Pour le codage sur IOS il est necessaire de faire des configurations suplémentaires sur vscode. On peut utiliser un appareil iOS que l'on possède ou utiliser un service cloud tel que Firebase Test Lab ou BrowserStack pour tester notre application sur différents appareils iOS.
 
@@ -46,6 +45,8 @@ Pour vérifier que notre appareil est détecté par flutter faire la commande : 
 * La redirection par les boutons se fait dans la fonction onPressed() et utilise la fonction Navigator.push()
 
 * Pour tester sur IOS on doit obligatoirement avoir un appareil apple physique pour tester car on ne peut avoir accès aux emulateurs qu'au travers d'un Mac. Pour tester à distance notre application sur un appareil Apple on peut utiliser service basé sur le cloud comme Firebase Test Lab ou AWS Device Farm.
+
+* Si on t'embete avec l'initialisation tu mets "late" avant le type de la variable
 
 # GPS en Flutter 
 
