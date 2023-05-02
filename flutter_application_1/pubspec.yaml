@@ -16,6 +16,7 @@ dependencies:
   lite_rolling_switch: ^1.0.0
   flutter_launcher_icons: ^0.13.1
   custom_map_markers: ^0.0.1
+  flutter_osm_plugin: ^0.53.4+1
 
 dev_dependencies:
   flutter_test:
