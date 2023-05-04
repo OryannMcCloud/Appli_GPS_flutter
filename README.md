@@ -65,6 +65,8 @@ Les trames que nous recevront vont se présenter sous la forme NMEA avec comme s
 
 bon changement de cap il est plus simple de faire avec des vector tiles qui sont des listes des images qui forment une carte. La librairie vector_map_tiles nous propose 3 solutions payantes sauf qu'on n'en veut pas du coup on va sur un site qui nous permet de telecharger une carte au format pdf Protocolbuffer Binary Format et on utilise un programme fait par le repo github openmaptiles afin de décomposer notre carte en tiles.
 
+nous devons telecharger la carte en pbf depuis le site geofabrik pour l'utiliser avec la librairie dart vector_map_tiles
+
 # Pages de l'application
 
 * Le fichier map.dart contiendra la carte
