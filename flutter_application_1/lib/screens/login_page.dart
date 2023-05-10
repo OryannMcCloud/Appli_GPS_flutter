@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'home.dart';
-import 'map_display.dart';
 
 
 class LoginPage extends StatelessWidget {
@@ -54,7 +53,7 @@ class MyCustomForm extends StatelessWidget {
             onPressed: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => MapDisplay()),
+                MaterialPageRoute(builder: (context) => HomeScreen()),
               );
             },
             child: const Text('Submit'),
