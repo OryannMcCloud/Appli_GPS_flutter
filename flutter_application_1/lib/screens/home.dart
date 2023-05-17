@@ -1,9 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_map/flutter_map.dart';
-import 'package:latlong2/latlong.dart';
-import 'package:flutter_map/plugin_api.dart';
-import 'package:geolocator/geolocator.dart';
-import 'package:lite_rolling_switch/lite_rolling_switch.dart';
+import 'home.dart';
+import 'package:mapbox_flutter/mapbox_flutter.dart';
 
 class HomeScreen extends StatefulWidget { //widget pouvant changer d'état (GPS qui change de position)
   @override
