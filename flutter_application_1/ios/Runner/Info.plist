@@ -24,6 +24,8 @@
 	<string>$(FLUTTER_BUILD_NUMBER)</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>MGLMapboxAccessToken</key>
+	<strig>sk.eyJ1IjoiY3Jpc2FydGVjaCIsImEiOiJjbGh5Z2FzZGwwbXM0M2VvZXNwdjkyaHA4In0.vLuglOobIZtS2Vf73fUqzw</string>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
@@ -49,3 +51,7 @@
 	<true/>
 </dict>
 </plist>
+
+machine api.mapbox.com
+login crisartech
+password sk.eyJ1IjoiY3Jpc2FydGVjaCIsImEiOiJjbGh5Z2FzZGwwbXM0M2VvZXNwdjkyaHA4In0.vLuglOobIZtS2Vf73fUqzw
