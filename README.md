@@ -65,7 +65,16 @@ Les trames que nous recevront vont se présenter sous la forme NMEA avec comme s
 
 bon changement de cap il est plus simple de faire avec des vector tiles qui sont des listes des images qui forment une carte. La librairie vector_map_tiles nous propose 3 solutions payantes sauf qu'on n'en veut pas du coup on va sur un site qui nous permet de telecharger une carte au format pdf Protocolbuffer Binary Format et on utilise un programme fait par le repo github openmaptiles afin de décomposer notre carte en tiles.
 
-nous devons telecharger la carte en pbf depuis le site geofabrik pour l'utiliser avec la librairie dart vector_map_tiles
+essai avec geofabrik en pbf mais pas bonne solution
+nous devons telecharger la carte en mbtiles depuis bboxfinder en donnant les coordonnéees du rectangle. lors de l'installation de tilelive ne pas oublier de nettoyer le cache de npm car problèmes.
+
+probleme support null-safety : 
+
+
+Dart 3.0 doesn't support non-null safe code at all. Therefore, using an install of Dart 3.0 means you won't be able to work on a ny project who's defined SDK range includes a non-null safe Dart version.
+
+You need to migrate your project to null safety: https://dart.dev/null-safety/migration-guide. Then you can work up to the latest Flutter version (I'd recommend doing it incrementally to ensure you don't miss anything).
+
 
 # Pages de l'application
 
