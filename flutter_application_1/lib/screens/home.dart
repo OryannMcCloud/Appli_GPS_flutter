@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'home.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:mapbox_flutter/mapbox_flutter.dart';
 
 class _HomeScreenState extends StatelessWidget {
   //FIXME: Add your Mapbox access token here
-  static const String ACCESS_TOKEN = "YOUR_TOKEN_HERE";
+  static const String ACCESS_TOKEN = "sk.eyJ1IjoiY3Jpc2FydGVjaCIsImEiOiJjbGh5Z2FzZGwwbXM0M2VvZXNwdjkyaHA4In0.vLuglOobIZtS2Vf73fUqzw";
 
   void _pushPage(BuildContext context, HomeScreen page) async {
     if (!kIsWeb) {
@@ -35,4 +36,7 @@ class _HomeScreenState extends StatelessWidget {
       ),
     );
   }
+}
+
+class HomeScreen {
 }
