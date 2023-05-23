@@ -45,10 +45,6 @@ class _SplashState extends State<Splash> {
     LocationData _locationData = await location.getLocation();
     LatLng currentLatLng = LatLng(_locationData.latitude!, _locationData.longitude!);
 
-    //store the user location in sharedpreferences
-    sharedPreferences.setDouble('latitude', _locationData.latitude!);
-    sharedPreferences.setDouble('longitude', _locationData.longitude!);
-
     //get and store the directions API response in sharedpreferences
     Navigator.pushAndRemoveUntil(
       context,
