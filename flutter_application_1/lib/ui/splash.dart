@@ -1,11 +1,14 @@
 import 'dart:html';
-
+import 'dart:io';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'dart:io';
 import 'package:flutter_application_1/screens/home.dart';
 import 'package:mapbox_flutter/mapbox_flutter.dart';
 import 'package:location/location.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+
+import '../main.dart';
 
 class Splash extends StatefulWidget {
   const Splash({Key? key}) : super(key: key);
@@ -23,6 +26,7 @@ class _SplashState extends State<Splash> {
   }
 
   void initializeLocation() async {
+    //ensure all permissions are collected for Locations
     Location location = Location();
     bool? _serviceEnabled;
     PermissionStatus? _permissionGranted;
@@ -37,12 +41,13 @@ class _SplashState extends State<Splash> {
       _permissionGranted = await location.requestPermission();
     }
 
+    //get capture the current location of the user
     LocationData _locationData = await location.getLocation();
     LatLng currentLatLng = LatLng(_locationData.latitude!, _locationData.longitude!);
 
     //store the user location in sharedpreferences
-    sharedPreferences.setDouble('latitude', _locationData.latitude);
-    sharedPreferences.setDouble('longitude', _locationData.longitude );
+    sharedPreferences.setDouble('latitude', _locationData.latitude!);
+    sharedPreferences.setDouble('longitude', _locationData.longitude!);
 
     //get and store the directions API response in sharedpreferences
     Navigator.pushAndRemoveUntil(
@@ -54,19 +59,7 @@ class _SplashState extends State<Splash> {
   @override
   Widget build(BuildContext context) {
     return Material(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Image.asset('assets/logo.png', height: 130,),
-        const SizedBox(height: 20,),
-        if(Platform.isIOS)
-          const CupertinoActivityIndicator(
-            radius: 15,
-          )
-        else
-          const CircularProgressIndicator(
-            color: Colors.white,
-          )
-      ],
+      color: Colors.white,child: Center(child: Image.asset('assets/images/logo.png')),
     );
   }
 }
