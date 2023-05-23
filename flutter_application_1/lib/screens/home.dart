@@ -1,26 +1,34 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
+import 'package:mapbox_gl/mapbox_gl.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:mapbox_flutter/mapbox_flutter.dart';
 
-class _HomeScreenState extends StatelessWidget {
+class _HomeScreenState extends StatefulWidget {
   //FIXME: Add your Mapbox access token here
   static const String ACCESS_TOKEN = "sk.eyJ1IjoiY3Jpc2FydGVjaCIsImEiOiJjbGh5Z2FzZGwwbXM0M2VvZXNwdjkyaHA4In0.vLuglOobIZtS2Vf73fUqzw";
 
+  
+  late MapboxMapController controller;
+  late CameraPosition _initialCameraPosition;
+
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text('MapboxFlutterMaps examples')),
-      body: ListView.builder(
-        itemCount: _allPages.length,
-        itemBuilder: (_, int index) => ListTile(
-          leading: _allPages[index].leading,
-          title: Text(_allPages[index].title),
-          onTap: () => _pushPage(context, _allPages[index]),
-        ),
-      ),
-    );
+  void initState() {
+  super.initState();
+  _initialCameraPosition = CameraPosition(target: latLng, zoom: 15);
   }
+  
+  _onMapCreated(MapboxMapController controller) async {
+  this.controller = controller;
+}
+
+  @override
+  State<StatefulWidget> createState() {
+    // TODO: implement createState
+    throw UnimplementedError();
+  }
+
+
 }
 
 class HomeScreen {

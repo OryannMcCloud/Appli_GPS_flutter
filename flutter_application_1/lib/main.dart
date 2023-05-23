@@ -1,27 +1,31 @@
 import 'package:flutter/material.dart';
-import 'screens/login_page.dart';
-import 'provider/theme_provider.dart';
+import 'package:flutter_application_1/ui/splash.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+
+import 'ui/splash.dart';
+
+late SharedPreferences sharedPreferences;
 
 
-void main() {
-  runApp(MyApp());
+void main() async{
+  WidgetsFlutterBinding.ensureInitialized();
+  sharedPreferences = await SharedPreferences.getInstance();
+  await dotenv.load(fileName: "assets/config/.env");
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Crisartech GPS beta',
-      themeMode: ThemeMode.system,
-      darkTheme: MyThemes.darkTheme,
-      theme: MyThemes.lightTheme,
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Crisartech GPS beta'),
-          backgroundColor: Colors.purple,
-        ),
-        body: LoginPage(),
-      ),
+      title: 'Crisartech',debugShowCheckedModeBanner: false,
+      theme: ThemeData(brightness: Brightness.light),
+      darkTheme: ThemeData(brightness: Brightness.dark),
+      themeMode: ThemeMode.dark,
+      home: const Splash(),
     );
   }
 }
