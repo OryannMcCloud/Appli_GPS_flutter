@@ -10,7 +10,7 @@ class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
 
   @override 
-  Home createState() => _HomeState();
+  _MyHomePageState createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends State<Home> {
@@ -25,7 +25,7 @@ class _MyHomePageState extends State<Home> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Text('Mapbox'),
       ),
       body: Center(
         child: FlutterMap(
@@ -51,7 +51,7 @@ class _MyHomePageState extends State<Home> {
                   point: LatLng(31.050478, -7.931633),
                   builder: (ctx) => Container(
                     child: Image.asset(
-                      "use an image for marker",
+                      "assets/images/marker.png",
                     ),
                   ),
                 )
@@ -62,3 +62,4 @@ class _MyHomePageState extends State<Home> {
       ),
     );
   }
+}
