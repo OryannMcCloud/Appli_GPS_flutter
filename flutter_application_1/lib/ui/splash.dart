@@ -6,7 +6,6 @@ import 'dart:io';
 import 'package:flutter_application_1/screens/home.dart';
 import 'package:mapbox_flutter/mapbox_flutter.dart';
 import 'package:location/location.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 import '../main.dart';
 

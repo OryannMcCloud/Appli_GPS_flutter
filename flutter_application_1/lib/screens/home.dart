@@ -21,45 +21,45 @@ class _MyHomePageState extends State<Home> {
     super.initState();
   }
 
-@override
-Widget build(BuildContext context) {
-  return Scaffold(
-    appBar: AppBar(
-      title: Text('Mapbox'),
-    ),
-    body: Center(
-      child: FlutterMap(
-        options: MapOptions(
-          center: LatLng(31.050478, -7.931633),
-          zoom: 12.0,
-        ),
-        layers: [
-          TileLayerOptions(
-            urlTemplate:
-                "mapbox://styles/crisartech/clhre093a01zj01pg1b3hgprc",
-            additionalOptions: {
-              'accessToken':
-                  'pk.eyJ1IjoiY3Jpc2FydGVjaCIsImEiOiJjbGhxZ3pucjIyOXRkM2xveGJ1NWp4MWE0In0.hFgp3BOcrGhf5JGYG6Qh-A',
-              'id': 'mapbox.streets',
-            },
-          ),
-          MarkerLayerOptions(
-            markers: [
-              Marker(
-                width: 50.0,
-                height: 50.0,
-                point: LatLng(31.050478, -7.931633),
-                builder: (ctx) => Container(
-                  child: Image.asset(
-                    "assets/images/marker.png",
-                  ),
-                ),
-              )
-            ],
-          ),
-        ],
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Mapbox'),
       ),
-    ),
-  );
-}
+      body: Center(
+        child: FlutterMap(
+          options: MapOptions(
+            center: LatLng(31.050478, -7.931633),
+            zoom: 12.0,
+          ),
+          layers: [
+            TileLayerOptions(
+              urlTemplate:
+                  "mapbox://styles/crisartech/clhre093a01zj01pg1b3hgprc",
+              additionalOptions: {
+                'accessToken':
+                    'pk.eyJ1IjoiY3Jpc2FydGVjaCIsImEiOiJjbGhxZ3pucjIyOXRkM2xveGJ1NWp4MWE0In0.hFgp3BOcrGhf5JGYG6Qh-A',
+                'id': 'mapbox.streets',
+              },
+            ),
+            MarkerLayerOptions(
+              markers: [
+                Marker(
+                  width: 50.0,
+                  height: 50.0,
+                  point: LatLng(31.050478, -7.931633),
+                  builder: (ctx) => Container(
+                    child: Image.asset(
+                      "assets/images/marker.png",
+                    ),
+                  ),
+                )
+              ],
+            ),
+          ],
+        ),
+      ),
+    );
+  }
 }
