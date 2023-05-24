@@ -23,6 +23,7 @@ class _MyHomePageState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
+    var latLng;
     return Scaffold(
       appBar: AppBar(
         title: Text('Mapbox'),
