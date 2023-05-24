@@ -30,7 +30,7 @@ class _MyHomePageState extends State<Home> {
       body: Center(
         child: FlutterMap(
           options: MapOptions(
-            center: LatLng(31.050478, -7.931633),
+            center: latLng.LatLng(31.050478, -7.931633),
             zoom: 12.0,
           ),
           layers: [
@@ -48,7 +48,7 @@ class _MyHomePageState extends State<Home> {
                 Marker(
                   width: 50.0,
                   height: 50.0,
-                  point: LatLng(31.050478, -7.931633),
+                  point: latLng.LatLng(31.050478, -7.931633),
                   builder: (ctx) => Container(
                     child: Image.asset(
                       "assets/images/marker.png",
