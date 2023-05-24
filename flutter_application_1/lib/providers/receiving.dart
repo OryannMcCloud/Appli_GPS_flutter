@@ -6,6 +6,8 @@ import 'package:flutter/material.dart';
 String data = "";
 
 class Receiving extends StatelessWidget {
+  const Receiving({super.key});
+
 
   void receive(Socket s) async{
   Socket sock = await Socket.connect('192.168.4.1', 80);
