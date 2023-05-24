@@ -3,10 +3,12 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'dart:io';
 
-String data = "";
+List<String> data = [];
 
 void main() async {
+  debugPrint("connecting");
   Socket sock = await Socket.connect('192.168.4.1', 80);
+  debugPrint("connected");
   runApp(MyApp(sock));
 }
 
@@ -16,8 +18,10 @@ class MyApp extends StatelessWidget {
 
   MyApp(Socket s, {super.key}) {
     socket = s;
+    socket.write('hi');
     socket.listen((List<int> rawData) {
-      data = utf8.decode(rawData);
+      //data = utf8.decode(rawData);
+      debugPrint(String.fromCharCodes(rawData).trim());
     });
   }
 
@@ -70,7 +74,9 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _togglePower() {
     // widget.channel.writeln(data);
-    debugPrint(data);
+    for (int i = 0; i < 3; i++) {
+      debugPrint(data[i]);
+    }
   }
 
   @override
