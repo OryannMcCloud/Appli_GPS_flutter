@@ -1,13 +1,9 @@
-import 'dart:html';
-import 'dart:io';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'dart:io';
 import 'package:flutter_application_1/screens/home.dart';
 import 'package:mapbox_flutter/mapbox_flutter.dart';
 import 'package:location/location.dart';
-
-import '../main.dart';
 
 class Splash extends StatefulWidget {
   const Splash({Key? key}) : super(key: key);
