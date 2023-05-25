@@ -11,6 +11,16 @@ buildscript {
     }
 }
 
+android {
+    defaultConfig {
+        // Other configurations...
+        manifestPlaceholders = [
+            "MAPBOX_ACCESS_TOKEN": "sk.eyJ1IjoiY3Jpc2FydGVjaCIsImEiOiJjbGh5Z2FzZGwwbXM0M2VvZXNwdjkyaHA4In0.vLuglOobIZtS2Vf73fUqzw"
+        ]
+    }
+}
+
+
 allprojects {
     repositories {
         google()
@@ -21,8 +31,6 @@ allprojects {
 rootProject.buildDir = '../build'
 subprojects {
     project.buildDir = "${rootProject.buildDir}/${project.name}"
-}
-subprojects {
     project.evaluationDependsOn(':app')
 }
 

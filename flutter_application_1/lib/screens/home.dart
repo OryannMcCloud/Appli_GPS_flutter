@@ -9,12 +9,12 @@ import 'package:latlong2/latlong.dart';
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
 
-  @override 
+  @override
   _MyHomePageState createState() => _MyHomePageState();
 }
 
 class _MyHomePageState extends State<Home> {
- 
+
   @override
   void initState() {
     // TODO: implement initState
