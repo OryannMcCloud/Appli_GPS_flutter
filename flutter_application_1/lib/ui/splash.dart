@@ -2,13 +2,13 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'dart:io';
 import 'package:flutter_application_1/screens/home.dart';
-import 'package:mapbox_flutter/mapbox_flutter.dart';
+import 'package:latlong2/latlong.dart';
 import 'package:location/location.dart';
 
 class Splash extends StatefulWidget {
   const Splash({Key? key}) : super(key: key);
 
-  @override 
+  @override
   _SplashState createState() => _SplashState();
 }
 
@@ -25,6 +25,7 @@ class _SplashState extends State<Splash> {
     Location location = Location();
     bool? _serviceEnabled;
     PermissionStatus? _permissionGranted;
+    var ltlg;
 
     _serviceEnabled = await location.serviceEnabled();
     if(!_serviceEnabled) {

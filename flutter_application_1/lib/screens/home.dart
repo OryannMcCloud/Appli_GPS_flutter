@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_map/flutter_map.dart';
 import 'package:mapbox_gl/mapbox_gl.dart';
-import 'package:mapbox_flutter/mapbox_flutter.dart';
 import 'package:latlong2/latlong.dart';
 
 

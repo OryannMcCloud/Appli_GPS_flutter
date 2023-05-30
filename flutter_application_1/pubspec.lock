@@ -344,22 +344,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.1.1"
-  mapbox_flutter:
-    dependency: "direct main"
-    description:
-      name: mapbox_flutter
-      sha256: cbc3fade1343a09ee6218434ab4f2cff4bc132725605f957c17c55fef848a4da
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.0.0-dev.1.1"
   mapbox_gl:
     dependency: "direct main"
     description:
       name: mapbox_gl
-      sha256: b6c40f693fd2ec4d19f2693d19c364ce1ebdf70914b77ac03300290574b93c86
+      sha256: dd86894d200ff74867d3a21e71a0ee00387f1b7e4d775d6bad9c850ecfef082c
       url: "https://pub.dev"
     source: hosted
-    version: "0.13.0"
+    version: "0.14.0"
   mapbox_gl_dart:
     dependency: transitive
     description:
@@ -372,18 +364,18 @@ packages:
     dependency: transitive
     description:
       name: mapbox_gl_platform_interface
-      sha256: c6c9dce2e59cf56efe45a85c6dbd28434c80db73e3bf6df799ff2952ba2a4927
+      sha256: e92ac7e803db5773c56eeb0ceadcf8953cd12dbc44bed2e79e08948c9251666d
       url: "https://pub.dev"
     source: hosted
-    version: "0.13.0"
+    version: "0.14.0"
   mapbox_gl_web:
     dependency: transitive
     description:
       name: mapbox_gl_web
-      sha256: d1c66a77993a067430c92bc6860e64faf20a877a596b3cb002447bd4c0197d60
+      sha256: b5ce81cfbbeda67c491abfda285c3639584afb58f19271218e78dba129ce8f36
       url: "https://pub.dev"
     source: hosted
-    version: "0.13.0"
+    version: "0.14.0"
   matcher:
     dependency: transitive
     description:
