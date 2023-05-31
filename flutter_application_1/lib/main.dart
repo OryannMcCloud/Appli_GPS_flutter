@@ -3,7 +3,12 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'dart:io';
 
-List<String> data = [];
+import '';
+
+String data= "";
+String latitude = "";
+String longitude = "";
+String degree = "";
 
 void main() async {
   debugPrint("connecting");
@@ -19,9 +24,21 @@ class MyApp extends StatelessWidget {
   MyApp(Socket s, {super.key}) {
     socket = s;
     socket.write('hi');
-    socket.listen((List<int> rawData) {
-      //data = utf8.decode(rawData);
-      debugPrint(String.fromCharCodes(rawData).trim());
+    socket.listen((rawData) {
+      data = utf8.decode(rawData);
+      debugPrint(data);
+      //data = String.fromCharCode(rawData as int);
+      //debugPrint(String.fromCharCodes(rawData));
+
+      if (data.contains("lat")) {
+        latitude = data[0] + data[1] + data[2] + data[3] + data[4] + data[5] + data[6] + data[7] + data[8];
+      }
+      if (data.contains("lon")) {
+        longitude = data[0] + data[1] + data[2] + data[3] + data[4] + data[5] + data[6] + data[7] + data[8];
+      }
+      if (data.contains("deg")) {
+        degree = data[12] + data[13] + data[14] + data[15];
+      }
     });
   }
 
@@ -53,7 +70,7 @@ class MyApp extends StatelessWidget {
 class MyHomePage extends StatefulWidget {
   final Socket channel;
 
-  MyHomePage({super.key, required this.title, required this.channel});
+  const MyHomePage({super.key, required this.title, required this.channel});
 
   // This widget is the home page of your application. It is stateful, meaning
   // that it has a State object (defined below) that contains fields that affect
@@ -74,9 +91,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _togglePower() {
     // widget.channel.writeln(data);
-    for (int i = 0; i < 3; i++) {
-      debugPrint(data[i]);
-    }
+    debugPrint("lat : $latitude, lon : $longitude, deg : $degree");
   }
 
   @override
